@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    tools:context=".dayFragment">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/top_of_nav">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="Day of Date"
+            android:textSize="30dp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/bt"
+        android:text="Enter a date : "
+        android:textSize="30dp"/>
+    <RelativeLayout
+        android:id="@+id/dateInput"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/for_card"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+        <TextView
+            android:id="@+id/datetv"
+            android:layout_marginStart="12dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/shadow"
+            android:text="DATE : "
+            android:textSize="21dp"/>
+        <TextView
+            android:id="@+id/editt"
+            android:ems="10"
+            android:textColor="@color/shadow"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/datetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"/>
+        <ImageView
+            android:id="@+id/imagebtn"
+            android:layout_toEndOf="@id/editt"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/calendar"
+            android:tint="@color/bt"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dateInput"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="calculate"
+        android:drawableTint="@color/td"
+        android:textColor="@color/td"
+        android:backgroundTint="@color/bt"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/resulttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/bt"
+        android:text="RESULTS : "
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/resulttv"
+        android:textColor="@color/shadow"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"/>
+</RelativeLayout>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                android:outlineSpotShadowColor="@color/shadow"
+                android:outlineAmbientShadowColor="@color/shadow"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp"
+                android:foreground="@drawable/for_card"
+                android:backgroundTint="@color/head">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <FrameLayout
+                        android:id="@+id/logo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:elevation="4dp"
+                        android:background="@drawable/for_card"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/llogo" />
+                    </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Date &amp; Time Calulator"
+                    android:layout_toEndOf="@id/logo"
+                    android:layout_marginStart="10dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/darkclr"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/full"
+                android:layout_below="@id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:id="@+id/row1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        android:foreground="@drawable/for_card"
+                        android:outlineSpotShadowColor="@color/shadow"
+                        android:outlineAmbientShadowColor="@color/shadow">
+
+                        <LinearLayout
+                            android:layout_width="154dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/wd"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="3dp"
+                                    android:src="@drawable/date_icon"
+                                    android:tint="@color/shadow" />
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="3dp"
+                                    android:src="@drawable/clock"
+                                    android:tint="@color/shadow" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="3dp"
+                                    android:src="@drawable/add_square"
+                                    android:tint="@color/shadow" />
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="3dp"
+                                    android:src="@drawable/minus_square"
+                                    android:tint="@color/shadow" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="Add and Sub on Date and Time"
+                                android:gravity="center"
+                                android:textColor="@color/shadow"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_below="@id/card1"
+                        android:layout_margin="12dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        android:foreground="@drawable/for_card"
+                        android:outlineSpotShadowColor="@color/shadow"
+                        android:outlineAmbientShadowColor="@color/shadow">
+
+                        <LinearLayout
+                            android:layout_width="154dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/wd"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/clock"
+                                    android:tint="@color/shadow" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/add"
+                                    android:tint="@color/shadow" />
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/minus"
+                                    android:tint="@color/shadow" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="Add and Sub on Time"
+                                android:textColor="@color/shadow"
+                                android:gravity="center"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_below="@id/card3"
+                        android:layout_margin="12dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        android:foreground="@drawable/for_card"
+                        android:outlineSpotShadowColor="@color/shadow"
+                        android:outlineAmbientShadowColor="@color/shadow">
+
+                        <LinearLayout
+                            android:layout_width="154dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/wd"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/add_square"
+                                    android:tint="@color/shadow" />
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/minus"
+                                    android:tint="@color/shadow" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/date_icon"
+                                    android:tint="@color/shadow" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="Add and Sub on Date"
+                                android:textColor="@color/shadow"
+                                android:gravity="center"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_below="@id/card5"
+                        android:layout_margin="12dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        android:foreground="@drawable/for_card"
+                        android:outlineSpotShadowColor="@color/shadow"
+                        android:outlineAmbientShadowColor="@color/shadow">
+
+                        <LinearLayout
+                            android:layout_width="154dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/wd"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="left">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/date_5_icon"
+                                    android:tint="@color/shadow" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/arrow_right_24"
+                                    android:tint="@color/shadow" />
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/day_icon"
+                                    android:tint="@color/shadow" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="Find Day of Date"
+                                android:textColor="@color/shadow"
+                                android:gravity="center"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_below="@id/card7"
+                        android:layout_margin="12dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        android:foreground="@drawable/for_card"
+                        android:outlineSpotShadowColor="@color/shadow"
+                        android:outlineAmbientShadowColor="@color/shadow">
+
+                        <LinearLayout
+                            android:layout_width="154dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/wd"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="right">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/leap"
+                                    android:tint="@color/shadow" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="left">
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/not_leap"
+                                    android:tint="@color/shadow" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="Leap Year Finder"
+                                android:textColor="@color/shadow"
+                                android:gravity="center"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_toEndOf="@id/row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    android:foreground="@drawable/for_card"
+                    android:outlineSpotShadowColor="@color/shadow"
+                    android:outlineAmbientShadowColor="@color/shadow">
+
+                    <LinearLayout
+                        android:layout_width="154dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/wd"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/difference_layers_icon_212968"
+                                android:tint="@color/shadow" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/date"
+                                android:tint="@color/shadow" />
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/clock_137"
+                                android:tint="@color/shadow" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Date and Time Difference"
+                            android:textColor="@color/shadow"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_below="@id/card2"
+                    android:layout_margin="12dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    android:foreground="@drawable/for_card"
+                    android:outlineSpotShadowColor="@color/shadow"
+                    android:outlineAmbientShadowColor="@color/shadow">
+
+                    <LinearLayout
+                        android:layout_width="154dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/wd"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/clock_137"
+                                android:tint="@color/shadow" />
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/difference_layers_icon_212968"
+                                android:tint="@color/shadow" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Time Difference"
+                            android:textColor="@color/shadow"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_below="@id/card4"
+                    android:layout_margin="12dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    android:foreground="@drawable/for_card"
+                    android:outlineSpotShadowColor="@color/shadow"
+                    android:outlineAmbientShadowColor="@color/shadow">
+
+                    <LinearLayout
+                        android:layout_width="154dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/wd"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/calendar"
+                                android:tint="@color/shadow" />
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/difference_layers_icon_212968"
+                                android:tint="@color/shadow" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Date Difference"
+                            android:textColor="@color/shadow"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_below="@id/card6"
+                    android:layout_margin="12dp"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    android:foreground="@drawable/for_card"
+                    android:outlineSpotShadowColor="@color/shadow"
+                    android:outlineAmbientShadowColor="@color/shadow">
+
+                    <LinearLayout
+                        android:layout_width="154dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/wd"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/day_icon"
+                                android:tint="@color/shadow" />
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/left_to_down"
+                                android:tint="@color/shadow" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="right">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/date_5_icon"
+                                android:tint="@color/shadow" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Find Days of Date"
+                            android:textColor="@color/shadow"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_below="@id/card8"
+                    android:elevation="6dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:foreground="@drawable/for_card"
+                    android:outlineSpotShadowColor="@color/shadow"
+                    android:outlineAmbientShadowColor="@color/shadow">
+
+                    <LinearLayout
+                        android:layout_width="154dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/wd"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/b_high"
+                                android:tint="@color/shadow" />
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/b_low"
+                                android:tint="@color/shadow" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/b_auto"
+                                android:tint="@color/shadow" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Mode"
+                            android:textColor="@color/shadow"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_below="@id/full"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"/>
+        </RelativeLayout>
+    </GridLayout>
+
+</ScrollView>

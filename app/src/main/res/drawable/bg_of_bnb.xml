@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/bg_of_bnb_clr"
+        />
+    <stroke
+        android:color="@color/dark"
+        android:width="0.5dp" />
+
+<!--    style = "@style/bg_of_bnb_clr"-->
+    <corners
+        android:topRightRadius="15dp"
+        android:topLeftRadius="15dp"/>
+</shape>

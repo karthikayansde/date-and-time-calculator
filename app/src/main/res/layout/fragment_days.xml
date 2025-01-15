@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    tools:context=".DaysFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/top_of_nav">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="Find Days of Date"
+            android:textSize="30dp" />
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/bt"
+            android:text="Enter inputs to calculate : "
+            android:textSize="30dp"/>
+    <RelativeLayout
+        android:id="@+id/topinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/yearPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/monthPicker"
+            android:background="@drawable/for_card"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/yeartv"
+                android:layout_width="59dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/shadow"
+                android:text="Year "
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/edittime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_below="@id/yeartv"
+                android:ems="2"
+                android:textColor="@color/shadow"
+                android:textSize="21dp" />
+
+            <ImageView
+                android:id="@+id/imgtbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/yeartv"
+                android:tint="@color/bt"
+                android:paddingEnd="5dp"
+                android:src="@drawable/year_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/monthPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/for_card"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/shadow"
+                android:text="Month "
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/editmonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_below="@id/tvm"
+                android:ems="6"
+                android:textColor="@color/shadow"
+                android:textSize="21dp" />
+
+            <ImageView
+                android:id="@+id/mimgbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/editmonth"
+                android:tint="@color/bt"
+                android:paddingEnd="5dp"
+                android:src="@drawable/january_month_icon" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dayPicker"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@id/topinput"
+        android:background="@drawable/for_card"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/daytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/shadow"
+            android:text="Day "
+            android:textSize="21dp" />
+        <TextView
+            android:id="@+id/editday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/daytv"
+            android:ems="5"
+            android:textColor="@color/shadow"
+            android:textSize="21dp" />
+
+        <ImageView
+            android:id="@+id/dayimgbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/editday"
+            android:tint="@color/bt"
+            android:paddingEnd="5dp"
+            android:src="@drawable/day_icon" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dayPicker"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:id="@+id/btn"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="calculate"
+                android:drawableTint="@color/td"
+                android:textColor="@color/td"
+                android:backgroundTint="@color/bt"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/resulttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnrl"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/bt"
+            android:text="RESULTS : "
+            android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/shadow"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/resulttv"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/yearrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:clipToPadding="true"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:clipToPadding="true">
+
+                <NumberPicker
+                    android:id="@+id/noPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/nopicker"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/bg"
+                    android:clipToPadding="true"/>
+                <TextView
+                    android:id="@+id/tvBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ok"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:background="@color/ok"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/monthrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:clipToPadding="true"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:clipToPadding="true">
+
+                <NumberPicker
+                    android:id="@+id/noPickerm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/nopicker"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/bg"
+                    android:clipToPadding="true"/>
+                <TextView
+                    android:id="@+id/tvBtnM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ok"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:background="@color/ok"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/dayrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:clipToPadding="true"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:clipToPadding="true">
+
+                <NumberPicker
+                    android:id="@+id/noPickerD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/nopicker"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/bg"
+                    android:clipToPadding="true"/>
+                <TextView
+                    android:id="@+id/tvBtnD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ok"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:background="@color/ok"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

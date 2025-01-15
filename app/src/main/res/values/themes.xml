@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SideBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/darkclr</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+    <color name="bg_of_bnb_clr">@color/white</color>
+    <color name="bg_stroke">@color/darkclr</color>
+
+    <color name="theme">@color/themeOfApp</color>
+    <color name="light">@color/lightclr</color>
+    <color name="dark">@color/darkclr</color>
+
+    <color name="shadow">@color/darkclr</color>
+
+    <color name="head">@color/white</color>   <!--    white = themeOfApp    -->
+
+    <color name="wd">@color/white</color>    <!--   white = darkclr    -->
+
+    <color name="ld">@color/lightclr</color>    <!--   lightclr = darkclr    -->
+
+    <color name="bt">@color/black</color>    <!--   black = themeOfApp    -->
+
+    <color name="td">@color/themeOfApp</color>    <!--   themeOfApp = darkclr    -->
+
+    <color name="bnb">@color/darkclr</color>    <!--   darkclr = themedark    -->
+    <style name="nopicker">
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+    <style name="radio">
+        <item name="color">@color/shadow</item>
+    </style>
+<!--    &lt;!&ndash;    colors&ndash;&gt;-->
+<!--    <style name="theme">-->
+<!--        <item name="android:color">#323b4c</item>-->
+<!--    </style>-->
+<!--    <style name="light">-->
+<!--        <item name="android:color">#717894</item>-->
+<!--    </style>-->
+<!--    <style name="dark">-->
+<!--        <item name="android:color">#f8d0f2</item>-->
+<!--    </style>-->
+<!--    &lt;!&ndash;    background color&ndash;&gt;-->
+<!--    <style name="themeb">-->
+<!--        <item name="android:background">#323b4c</item>-->
+<!--    </style>-->
+<!--    <style name="lightb">-->
+<!--        <item name="android:background">#717894</item>-->
+<!--    </style>-->
+<!--    <style name="darkb">-->
+<!--        <item name="android:background">#f8d0f2</item>-->
+<!--    </style>-->
+
+</resources>
