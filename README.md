@@ -1,16 +1,25 @@
-# sample_task
 
-A new Flutter project.
+# Date and Time Calculator
 
-## Getting Started
+Date and Time Calculator is an Android app that helps users perform quick calculations with dates and times. It includes features like finding the difference between two dates, adding or subtracting time from a specific date, and converting between time units. With an intuitive interface, it’s a handy tool for scheduling, planning, and managing deadlines.
+## Features
 
-This project is a starting point for a Flutter application.
+- Add and Subtract on Date and Time
+- Date and Time Difference Finder
+- Add and Subtract on Time
+- Time Difference Calculation
+- Add and Subtract on Date
+- Date Difference Calculation
+- Find the Day of a Specific Date
+- Count Days Between Dates
+- Leap Year Finder
+- Light, Dark, and System Modes
 
-A few resources to get you started if this is your first Flutter project:
+## Demo
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://github.com/user-attachments/assets/80b86e4a-a504-4ce0-96fd-9d1f9d80f35a
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
